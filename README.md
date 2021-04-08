@@ -88,7 +88,30 @@ Peer rely on python package requests : https://docs.python-requests.org/en/maste
  ```
 
  ```txt
- Un text
+ With options :
+
+  Mandatories :
+
+  --grid=<grid>   : Set Eulerian customer Grid name.
+  --ip=<ip>       : Set Eulerian customer IPv4 address.
+  --token=<token> : Set Eulerian customer AES token.
+
+  Optionals :
+
+  --accept=<accept>  : Set accepted reply format. ( default : 'application/json' ).
+  --wdir=<directory> : Set Working directory used to download replies. ( default : '/tmp' ).
+  --download-only    : Download the replies into working directory.
+
+  Experts :
+
+  --peer=<class>        : Set transport class. ( default : Eulerian.Edw.Peers.Rest ).
+  --hook=<class>        : Set output hook class. ( default : Eulerian.Edw.Hooks.CSV ).
+  --hook-options=<path> : Set output hook options. ( default : Hook.conf ).
+  --host=<host>         : Set remote host. ( default : None ).
+  --ports=<ports>       : Set remote ports. ( default : 80,443 ).
+  --platform=<platform> : Set the name of authority platform. ( default : france ).
+  --tokens=<path>       : Set path to a file containing Eulerian customers AES tokens.
+  --unsecure            : Use unsecure transport layer.
  ```
 
 <!-- ROADMAP -->
