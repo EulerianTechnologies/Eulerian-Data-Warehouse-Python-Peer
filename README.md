@@ -1,5 +1,3 @@
 <p style="background-color=black;">
-  <a href="https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer/blob/assets/">
-    <img src="images/Eulerian-logo.png" alt="Logo">
-  </a>
+  <img src="https://www.eulerian.com/wp-content/uploads/2020/08/Logo-Eulerian-Header-white.png" alt="Logo">
 </p>
