@@ -31,7 +31,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer">
-    <img src="images/Eulerian-logo.png" alt="Logo">
+    <img src="../assets/images/Eulerian-logo.png" alt="Logo">
   </a>
   <h3 align="center">Eulerian Data Warehouse Python Peer</h3>
   <p align="center">
