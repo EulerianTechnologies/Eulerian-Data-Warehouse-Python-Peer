@@ -1,1 +1,1 @@
-![Demo Animation](../assets/images/demo.gif?raw=true)
+![Demo Animation](../assets/images/Eulerian-logo.png?raw=true)
