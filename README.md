@@ -112,7 +112,7 @@ Peer rely on python package requests : https://docs.python-requests.org/en/maste
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/THORCOMP/repo_name.git
    ```
 2. Install NPM packages
    ```sh
