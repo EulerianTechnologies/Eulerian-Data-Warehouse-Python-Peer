@@ -32,8 +32,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer/blob/assets">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer">
+    <img src="../assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">project_title</h3>
