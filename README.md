@@ -87,10 +87,9 @@ Peer rely on python package requests : https://docs.python-requests.org/en/maste
  ./Peer.py <options> file1 file2 ... filex
  ```
 
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+ ```txt
+ Un text
+ ```
 
 <!-- ROADMAP -->
 ## Roadmap
