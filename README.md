@@ -83,7 +83,7 @@ Peer rely on python package requests : https://docs.python-requests.org/en/maste
 <!-- USAGE EXAMPLES -->
 ## Simple Usage
 
-Helper script 'Peer.sh' is provided to simplify the python Peer.py usage.
+Helper script <strong>Peer.sh</strong> is provided to simplify the python <strong>Peer.py</strong> usage.
 
 This script rely on the setup of a configuration file named Peer.conf located in the same directory than the script, it is in charge of
 providing mandatories parameters to ./Peer.py script.
