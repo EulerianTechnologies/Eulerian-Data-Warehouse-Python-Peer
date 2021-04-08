@@ -145,7 +145,7 @@ Project Link: [https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer](
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
+* [python3](https://docs.python.org/3/tutorial/)
 * []()
 * []()
 
