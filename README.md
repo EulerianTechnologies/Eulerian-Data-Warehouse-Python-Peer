@@ -127,7 +127,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer/issues) for a list of proposed features (and known issues).
 
 
 
@@ -156,9 +156,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
+Project Link: [https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer](https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -166,9 +164,6 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 * []()
 * []()
 * []()
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
