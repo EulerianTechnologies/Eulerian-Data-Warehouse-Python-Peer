@@ -57,7 +57,7 @@
 
 * [Python](https://www.python.org/)
 * [Rest](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [Request](https://docs.python-requests.org/en/master/)
+* [Requests](https://docs.python-requests.org/en/master/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -136,7 +136,7 @@ Project Link: [https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer](
 
 * [python](https://docs.python.org/3/tutorial/)
 * [rest](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [EDW]()
+* [Edw]()
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
