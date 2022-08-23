@@ -58,6 +58,7 @@
 * [Python](https://www.python.org/)
 * [Rest](https://en.wikipedia.org/wiki/Representational_state_transfer)
 * [Requests](https://docs.python-requests.org/en/master/)
+* [ijson](https://pypi.org/project/ijson/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
