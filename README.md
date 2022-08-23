@@ -58,7 +58,6 @@
 * [Python](https://www.python.org/)
 * [Rest](https://en.wikipedia.org/wiki/Representational_state_transfer)
 * [Requests](https://docs.python-requests.org/en/master/)
-* [ijson](https://pypi.org/project/ijson/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -72,6 +71,13 @@ Peer rely on python package requests : https://docs.python-requests.org/en/maste
 * pip
   ```sh
   python -m pip install requests
+  ```
+
+Peer rely on python package ijson : https://pypi.org/project/ijson/
+
+* pip
+  ```sh
+  python -m pip install ijson
   ```
 
 ### Installation
