@@ -124,7 +124,6 @@ providing mandatories parameters to ./Peer.py script.
   --host=<host>         : Set remote host. ( default : None ).
   --ports=<ports>       : Set remote ports. ( default : 80,443 ).
   --platform=<platform> : Set the name of authority platform. ( default : france ).
-  --tokens=<path>       : Set path to a file containing Eulerian customers AES tokens.
   --unsecure            : Use unsecure transport layer.
  ```
 
@@ -143,7 +142,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 THORILLON Xavier - x.thorillon@eulerian.com
 
-Project Link: [https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer](https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer)
+Project Link: [https://github.com/EulerianTechnologies/Eulerian-Data-Warehouse-Python-Peer](https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
