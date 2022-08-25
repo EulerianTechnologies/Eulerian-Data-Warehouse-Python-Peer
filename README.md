@@ -88,7 +88,7 @@ Peer rely on python package ijson : https://pypi.org/project/ijson/
    ```
 
 <!-- USAGE EXAMPLES -->
-## Simple Usage
+## Command line tool Usage
 
 Helper script <strong>Peer.sh</strong> is provided to simplify the python <strong>Peer.py</strong> usage.
 
@@ -133,6 +133,24 @@ providing mandatories parameters to ./Peer.py script.
   --platform=<platform> : Set the name of authority platform. ( default : france ).
   --unsecure            : Use unsecure transport layer.
  ```
+## APÏ usage
+
+from Eulerian.Edw.Peers.Rest import Rest as Rest
+
+/* Setup mandatory parameters */
+platform = 'france'   ( Can be france or canada )
+grid     = <GridName> ( Eulerian Customer Grid )
+token    = <Token>    ( Eulerian Customer Token )
+request  = <request>  ( Eulerian Data Warehouse Request )
+
+/* Create new Rest Peer Instance */
+peer = Rest()
+
+/* Setup parameters */
+peer.set_platform( platform )
+peer.set_grid( grid )
+peer.set_token( token )
+peer.request( request )
 
 <!-- ROADMAP -->
 ## Roadmap
