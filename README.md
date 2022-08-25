@@ -135,6 +135,8 @@ If used directly, python script help is as following :
  ```
 ## API usage
 
+#Download
+
  ```python
 
 from Eulerian.Edw.Peers.Rest import Rest as Rest
@@ -159,6 +161,12 @@ path = peer.request( request )
 /* 'path' give the resulting file path */
 
  ```
+ 
+ #In Memory
+
+ #In Pandas
+
+ 
 <!-- ROADMAP -->
 ## Roadmap
 
