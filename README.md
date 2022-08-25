@@ -102,7 +102,7 @@ providing mandatories parameters to ./Peer.py script.
  ./Peer.sh file1 file2 ... filex
  ```
 
-
+If used directly, python script help is as following :
 
  ```sh
  ./Peer.py <options> file1 file2 ... filex
