@@ -67,6 +67,8 @@ class Rest( Peer ) :
             url += self.get_ports()[ self.get_secure() ]
         elif platform == 'france' :
             url += 'edw.ea.eulerian.com'
+        elif platform == 'canada' :
+            url += 'edw.ea.eulerian.ca'
         else :
             url += self.get_grid() + '.'
             url += Authority.DOMAINS[ platform ]
@@ -107,7 +109,9 @@ class Rest( Peer ) :
         else :
             return {
                 'Authorization' : bearer,
-                'Content-Type'  : self.get_accept(),
+                'Content-Type'  : 'application/json',
+                'Accept'  : self.get_accept(),
+                'Accept-Encoding' : 'gzip'
             }
     #
     # @brief Get current Date time.
@@ -277,6 +281,7 @@ class Rest( Peer ) :
     # @param command - Eulerian Data Warehouse command.
     #
     def request( self, command ) :
+        path = None
         # Create a new JOB
         reply = self.create( command )
         if reply is None :
@@ -284,7 +289,7 @@ class Rest( Peer ) :
                 "Error : " + Rest.request.__qualname__ +
                 "() failed. Job creation failed."
                 )
-            return
+            return path
         status = reply[ 'status' ]
         while status == 'Running' :
             # Get JOB status
@@ -299,6 +304,7 @@ class Rest( Peer ) :
         else :
             # Download JOB response
             path = self.download( reply )
-            if path is not None :
+            if path is not None and self.get_download() == False :
                 # Parse JOB response
                 self.parse( path )
+        return path

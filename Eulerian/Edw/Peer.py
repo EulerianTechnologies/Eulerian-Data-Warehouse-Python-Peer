@@ -41,6 +41,7 @@ class Peer :
         self.__secure = 1 
         self.__ip = None
         self.__wdir = None
+        self.__download = False
     #
     # @brief Set remote host.
     #
@@ -228,6 +229,23 @@ class Peer :
     #
     def get_tokens( self ) :
         return self.__tokens
+    #
+    # @brief Set Download only mode value.
+    #
+    # @param self - Eulerian Data Warehouse Peer.
+    # @param download - True/False.
+    #
+    def set_download( self, download ) :
+        self.__download = download
+    #
+    # @brief Get Download only mode value.
+    #
+    # @param self - Eulerian Data Warehouse Peer.
+    #
+    # @return True/False
+    #
+    def get_download( self ) :
+        return self.__download
     #
     # @brief Set Eulerian output Hooks.
     #
