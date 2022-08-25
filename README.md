@@ -135,6 +135,8 @@ providing mandatories parameters to ./Peer.py script.
  ```
 ## APÏ usage
 
+ ```python
+
 from Eulerian.Edw.Peers.Rest import Rest as Rest
 
 /* Setup mandatory parameters */
@@ -152,6 +154,7 @@ peer.set_grid( grid )
 peer.set_token( token )
 peer.request( request )
 
+ ```
 <!-- ROADMAP -->
 ## Roadmap
 
