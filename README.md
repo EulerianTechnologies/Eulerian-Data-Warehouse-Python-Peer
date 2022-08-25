@@ -135,7 +135,7 @@ If used directly, python script help is as following :
  ```
 ## API usage
 
-#Download
+Download
 
  ```python
 
@@ -162,9 +162,9 @@ path = peer.request( request )
 
  ```
  
- #In Memory
+ In Memory
 
- #In Pandas
+ In Pandas
 
  
 <!-- ROADMAP -->
