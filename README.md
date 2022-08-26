@@ -147,22 +147,64 @@ grid     = <GridName> // ( Eulerian Customer Grid )
 token    = <Token>    // ( Eulerian Customer Token )
 request  = <request>  // ( Eulerian Data Warehouse Request )
 
-/* Create new Rest Peer Instance */
+/* Create new Peer Instance */
 peer = Rest()
 
-/* Setup parameters */
+/* Setup mandatory parameters */
 peer.set_platform( platform )
 peer.set_grid( grid )
 peer.set_token( token )
 
-/* Run request */
+/* Send request to the server, wait end of the job, download
+   resulting file, return path to the file */
 path = peer.request( request )
 
-/* 'path' give the resulting file path */
 
  ```
  
  In Memory
+
+```python
+
+MyHooks.py
+
+from Eulerian.Edw.Hook import Hook as Hook
+
+class MyHook( Hook ) :
+
+    def on_add( self, uuid, rows ) :
+      for row in rows :
+        string = ''
+        for col in row :
+          if type( col ) is bytes :
+            col.col.decode()
+          string += col
+          string += '#'
+         print( string )
+
+MyPeer.py
+
+from Eulerian.Edw.Peers.Rest import Rest as Rest
+import MyHooks
+
+/* Setup mandatory parameters */
+platform = 'france'   // ( Can be france or canada )
+grid     = <GridName> // ( Eulerian Customer Grid )
+token    = <Token>    // ( Eulerian Customer Token )
+request  = <request>  // ( Eulerian Data Warehouse Request )
+
+/* Create new Peer Instance */
+peer = Rest()
+
+/* Setup mandatory parameters */
+peer.set_platform( platform )
+peer.set_grid( grid )
+peer.set_token( token )
+peer.set_hooks( MyHooks() )
+
+/* Send request to the server, wait end of the job, download
+   resulting file, parse the file call hooks */
+peer.request( request )
 
  In Pandas
 
