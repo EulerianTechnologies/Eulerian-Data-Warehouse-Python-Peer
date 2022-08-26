@@ -163,7 +163,7 @@ path = peer.request( request )
 
  ```
  
- Create Job Load results into the script address space
+Create Job Load results into the script address space
 
 MyHooks.py
 
@@ -212,10 +212,48 @@ peer.set_hooks( MyHooks() )
 peer.request( request )
 
 ```
+Create Job Load resulting file into Pandas frame
 
- In Pandas
+MyPeer.py
 
- 
+```python
+
+from Eulerian.Edw.Peers.Rest import Rest as Rest
+import pandas as Pandas
+
+/* Setup mandatory parameters */
+platform = 'france'   // ( Can be france or canada )
+grid     = <GridName> // ( Eulerian Customer Grid )
+token    = <Token>    // ( Eulerian Customer Token )
+request  = <request>  // ( Eulerian Data Warehouse Request )
+
+/* Create new Peer Instance */
+peer = Rest()
+
+/* Setup mandatory parameters */
+peer.set_platform( platform )
+peer.set_grid( grid )
+peer.set_token( token )
+
+/* Setup format used to load data into Pandas */
+peer.set_accept( "application/parquet" )
+/* or 
+peer.set_accept( "text/csv" ) */
+
+/* Send request to the server, wait end of the job, download
+   resulting file, return path to the file */
+path = peer.request( request )
+
+/* Load resulting file ( parquet format ) */
+frame = Pandas.read_parquet( path )
+
+/*
+or 
+frame = Pandas.read_csv( path ) */
+
+
+```
+
 <!-- ROADMAP -->
 ## Roadmap
 
