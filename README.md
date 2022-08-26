@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/THORCOMP/Eulerian-Data-Warehouse-Python-Peer">
+  <a href="https://github.com/EulerianTechnologies/Eulerian-Data-Warehouse-Python-Peer">
     <img src="../assets/images/Eulerian-logo.png" alt="Logo">
   </a>
   <h3 align="center">Eulerian Data Warehouse Python Peer</h3>
