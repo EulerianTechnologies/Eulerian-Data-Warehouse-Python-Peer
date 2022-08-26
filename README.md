@@ -165,7 +165,7 @@ path = peer.request( request )
  
 Create Job Load results into the script address space
 
-MyHooks.py
+MyHook.py
 
 ```python
 
@@ -190,7 +190,7 @@ MyPeer.py
 ```python
 
 from Eulerian.Edw.Peers.Rest import Rest as Rest
-import MyHooks
+import MyHook
 
 /* Setup mandatory parameters */
 platform = 'france'   // ( Can be france or canada )
@@ -205,7 +205,7 @@ peer = Rest()
 peer.set_platform( platform )
 peer.set_grid( grid )
 peer.set_token( token )
-peer.set_hooks( MyHooks() )
+peer.set_hooks( MyHook() )
 
 /* Send request to the server, wait end of the job, download
    resulting file, parse the file call hooks */
