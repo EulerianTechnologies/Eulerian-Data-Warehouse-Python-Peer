@@ -163,8 +163,7 @@ peer.set_download( True )
 path = peer.request( request )
 
  ```
- 
-Create Job, download resulting file, parse streamed file and call hooks functions
+Create a Job download the resulting file, parse streamed file and call Hook functions 
 
 MyHook.py
 
@@ -213,7 +212,7 @@ peer.set_accept( "application/json" )
 peer.request( request )
 
 ```
-Create Job Load resulting file into Pandas frame
+Create a Job download the resulting file, load its content into Pandas Data Frame
 
 MyPeer.py
 
