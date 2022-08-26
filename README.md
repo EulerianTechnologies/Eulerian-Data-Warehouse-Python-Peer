@@ -156,6 +156,7 @@ peer = Rest()
 peer.set_platform( platform )
 peer.set_grid( grid )
 peer.set_token( token )
+peer.set_download( True )
 
 /* Send request to the server, wait end of the job, download
    resulting file, return path to the file */
@@ -163,7 +164,7 @@ path = peer.request( request )
 
  ```
  
-Create Job Load results into the script address space
+Create Job, download resulting file, parse streamed file and call hooks functions
 
 MyHook.py
 
@@ -172,7 +173,6 @@ MyHook.py
 from Eulerian.Edw.Hook import Hook as Hook
 
 class MyHook( Hook ) :
-
     def on_add( self, uuid, rows ) :
       for row in rows :
         string = ''
@@ -206,6 +206,7 @@ peer.set_platform( platform )
 peer.set_grid( grid )
 peer.set_token( token )
 peer.set_hooks( MyHook() )
+peer.set_accept( "application/json" )
 
 /* Send request to the server, wait end of the job, download
    resulting file, parse the file call hooks */
@@ -234,9 +235,11 @@ peer = Rest()
 peer.set_platform( platform )
 peer.set_grid( grid )
 peer.set_token( token )
+peer.set_download( True )
 
 /* Setup format used to load data into Pandas */
 peer.set_accept( "application/parquet" )
+
 /* or 
 peer.set_accept( "text/csv" ) */
 
@@ -247,8 +250,7 @@ path = peer.request( request )
 /* Load resulting file ( parquet format ) */
 frame = Pandas.read_parquet( path )
 
-/*
-or 
+/* or 
 frame = Pandas.read_csv( path ) */
 
 
