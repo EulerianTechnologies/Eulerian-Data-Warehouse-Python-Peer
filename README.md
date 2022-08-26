@@ -135,7 +135,9 @@ If used directly, python script help is as following :
  ```
 ## API usage
 
-Download
+Create a Job download the resulting file
+
+MyPeer.py
 
  ```python
 
@@ -159,14 +161,13 @@ peer.set_token( token )
    resulting file, return path to the file */
 path = peer.request( request )
 
-
  ```
  
- In Memory
-
-```python
+ Create Job Load results into the script address space
 
 MyHooks.py
+
+```python
 
 from Eulerian.Edw.Hook import Hook as Hook
 
@@ -181,8 +182,12 @@ class MyHook( Hook ) :
           string += col
           string += '#'
          print( string )
+         
+```
 
 MyPeer.py
+
+```python
 
 from Eulerian.Edw.Peers.Rest import Rest as Rest
 import MyHooks
@@ -205,6 +210,8 @@ peer.set_hooks( MyHooks() )
 /* Send request to the server, wait end of the job, download
    resulting file, parse the file call hooks */
 peer.request( request )
+
+```
 
  In Pandas
 
