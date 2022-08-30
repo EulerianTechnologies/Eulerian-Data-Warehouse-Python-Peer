@@ -133,6 +133,35 @@ If used directly, python script help is as following :
   --platform=<platform> : Set the name of authority platform. ( default : france ).
   --unsecure            : Use unsecure transport layer.
  ```
+ 
+## API reference
+
+class Eulerian.Edw.Peers.Rest
+
+# Allocator
+
+Rest()
+
+# Mandatory settings
+
+set_grid( grid )         : Defines Eulerian Grid name, Mandatory, default : None.
+set_token( token )       : Defines Eulerian token, Mandatory, default : None.
+
+# Common settings
+
+set_platform( platform ) : Defines Platform name. Can be : france/canada, default : france.
+set_accept( accept )     : Defines accepted client format. Can be : application/json, application/parquet, text/csv, default : application/json.
+set_wdir( dir )          : Defines output directory. ( Where files are downloaded, default : /tmp ).
+
+# Expert settings
+set_host( host )         : Defines Remote host.
+set_ports( ports )       : Defines Remotes ports( secure/unsecure ).
+set_kind( kind )         : Defines Authority token type ( Access/Session ).
+
+# Requesting
+
+request( command )       : Do command
+
 ## API usage
 
 Create a Job download the resulting file
