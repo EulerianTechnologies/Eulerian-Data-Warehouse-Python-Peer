@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/EulerianTechnologies/Eulerian-Data-Warehouse-Python-Peer">
-    <img src="../assets/images/Eulerian-logo.gif" alt="Logo">
+    <img src="./images/Eulerian-logo.gif" alt="Logo">
   </a>
   <h3 align="center">Eulerian Data Warehouse Python Peer</h3>
   <p align="center">
