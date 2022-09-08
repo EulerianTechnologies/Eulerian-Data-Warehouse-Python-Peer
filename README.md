@@ -140,7 +140,7 @@ class Eulerian.Edw.Peers.Rest
 
 ### Allocator
 
-```python
+```Python
 
 /** 
  * @brief Eulerian Data Warehouse Rest Peer constructor.
@@ -151,7 +151,7 @@ Rest()
 
 ### Mandatory settings
 
-```python
+```Python
 
 /**
  * @brief Defines Eulerian Grid Name. This attribute is mandatory and its default value is None.
@@ -171,7 +171,7 @@ set_token( token )
 
 ### Common settings
 
-```python
+```Python
 
 /**
  * @brief Defines Eulerian Platform Name. 'france' or 'canada' are the only accepted values. Default value is 'france'.
