@@ -154,14 +154,18 @@ Rest()
 ```Python
 
 /**
- * @brief Defines Eulerian Grid Name. This attribute is mandatory and its default value is None.
+ * @brief Defines Eulerian Grid Name. 
+ *        This attribute is mandatory.
+ *        Its default value is None.
  *
  * @param grid - Grid Name.
  */
 set_grid( grid )
 
 /**
- * @brief Defines Eulerian Grid Name. This attribute is mandatory and its default value is None.
+ * @brief Defines Eulerian Grid Name.
+ *        This attribute is mandatory.
+ *        Its default value is None.
  *
  * @param token - Token.
  */
@@ -174,21 +178,27 @@ set_token( token )
 ```Python
 
 /**
- * @brief Defines Eulerian Platform Name. 'france' or 'canada' are the only accepted values. Default value is 'france'.
+ * @brief Defines Eulerian Platform Name. 
+ *        'france' or 'canada' are the only accepted values.
+ *        Default value is 'france'.
  *
  * @param platform - Platform name.
  */
 set_platform( platform )
 
 /**
- * @brief Defines Accepted reply format. 'application/json', 'text/csv' and 'application/parquet' are the only accepted values. Default value is 'application/json'.
+ * @brief Defines Accepted reply format. 
+ *        'application/json', 'text/csv' and 'application/parquet' are the only accepted values.
+ *        Default value is 'application/json'.
  *
  * @param accept - Accept format.
  */
 set_accept( accept ) 
 
 /**
- * @brief Defines local working directory, any writable directory is valid. Default value is '/tmp'.
+ * @brief Defines local working directory.
+ *        Any writable directory is valid.
+ *        Default value is '/tmp'.
  *
  * @param dir - Working directory.
  */
