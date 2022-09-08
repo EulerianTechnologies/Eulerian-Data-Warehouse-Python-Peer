@@ -140,7 +140,14 @@ class Eulerian.Edw.Peers.Rest
 
 ### Allocator
 
+```python
+
+/** 
+ * @brief Eulerian Data Warehouse Rest Peer constructor.
+ */
 Rest()
+
+```
 
 ### Mandatory settings
 
@@ -164,9 +171,30 @@ set_token( token )
 
 ### Common settings
 
-set_platform( platform ) : Defines Platform name. Can be : france/canada, default : france.
-set_accept( accept )     : Defines accepted client format. Can be : application/json, application/parquet, text/csv, default : application/json.
-set_wdir( dir )          : Defines output directory. ( Where files are downloaded, default : /tmp ).
+```python
+
+/**
+ * @brief Defines Eulerian Platform Name. 'france' or 'canada' are the only accepted values. Default value is 'france'.
+ *
+ * @param platform - Platform name.
+ */
+set_platform( platform )
+
+/**
+ * @brief Defines Accepted reply format. 'application/json', 'text/csv' and 'application/parquet' are the only accepted values. Default value is 'application/json'.
+ *
+ * @param accept - Accept format.
+ */
+set_accept( accept ) 
+
+/**
+ * @brief Defines local working directory, any writable directory is valid. Default value is '/tmp'.
+ *
+ * @param dir - Working directory.
+ */
+set_wdir( dir )
+
+````
 
 ### Expert settings
 set_host( host )         : Defines Remote host.
