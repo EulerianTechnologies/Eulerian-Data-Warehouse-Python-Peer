@@ -144,8 +144,10 @@ Rest()
 
 ### Mandatory settings
 
+```python
 set_grid( grid )         : Defines Eulerian Grid name, Mandatory, default : None.
 set_token( token )       : Defines Eulerian token, Mandatory, default : None.
+```
 
 ### Common settings
 
