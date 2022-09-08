@@ -140,7 +140,7 @@ class Eulerian.Edw.Peers.Rest
 
 ### Allocator
 
-```Python
+```Cpp
 
 /** 
  * @brief Eulerian Data Warehouse Rest Peer constructor.
